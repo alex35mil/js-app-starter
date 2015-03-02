@@ -1,0 +1,29 @@
+$promo-height = 200px
+
+#promo
+  @extend $layout-section
+  display: flex
+  flex-direction: column
+  align-items: center
+  height: $promo-height
+  padding: .5em 0
+  font-size: 1em
+  color: $base-text-color
+
+  #promo__logo
+    width: 100%
+    font-size: 3em
+    font-weight: 700
+    text-align: center
+    text-shadow: 0 0 4px #000
+    cursor: pointer
+    &:before
+      @extend $Icomoon
+      font-size: .8em
+      padding-right: .5em
+      content: "\e9a5"
+
+  #promo__text
+    margin-top: -.7em
+    padding-left: 12em
+    text-shadow: 0 0 1px #000

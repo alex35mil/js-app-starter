@@ -1,0 +1,91 @@
+{
+  "name": "js-app-starter",
+  "version": "0.0.1",
+  "description": "JS app template",
+  "homepage": "https://github.com/alexfedoseev/js-app-starter",
+  "author": {
+    "name": "Alex Fedoseev",
+    "email": "alex.fedoseev@gmail.com",
+    "url": "http://www.alexfedoseev.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexfedoseev/js-app-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexfedoseev/js-app-starter/issues"
+  },
+  "main": "./dist/app.js",
+  "browser": {},
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "browserify-shim": {},
+  "scripts": {
+    "start": "NODE_ENV=development http-server -a lvh.me -p 3500 & gulp",
+    "build": "NODE_ENV=production gulp build"
+  },
+  "lintOptions": {
+    "globals": {
+      "React": false
+    },
+    "esnext": true,
+    "node": true,
+    "bitwise": true,
+    "browser": true,
+    "curly": false,
+    "eqeqeq": true,
+    "forin": true,
+    "immed": true,
+    "indent": 2,
+    "latedef": "nofunc",
+    "newcap": true,
+    "noarg": true,
+    "noempty": true,
+    "nonbsp": true,
+    "nonew": true,
+    "strict": false,
+    "globalstrict": true,
+    "sub": true,
+    "supernew": true,
+    "undef": true,
+    "unused": true
+  },
+  "dependencies": {
+    "jquery": "^2.1.3"
+  },
+  "devDependencies": {
+    "babelify": "^5.0.3",
+    "browserify": "^9.0.3",
+    "browserify-shim": "^3.8.3",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-changed": "^1.1.1",
+    "gulp-derequire": "^2.0.0",
+    "gulp-filter": "^2.0.2",
+    "gulp-header": "^1.2.2",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jade": "^1.0.0",
+    "gulp-jade-inheritance": "^0.5.0",
+    "gulp-jshint": "^1.9.2",
+    "gulp-minify-css": "^0.4.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-stylus": "^2.0.1",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.4",
+    "gulp.spritesmith": "^3.1.0",
+    "map-stream": "0.0.5",
+    "node-notifier": "^4.1.2",
+    "reactify": "^1.0.0",
+    "require-dir": "^0.1.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^2.4.0"
+  }
+}

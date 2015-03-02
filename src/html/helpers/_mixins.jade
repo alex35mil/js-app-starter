@@ -1,0 +1,3 @@
+mixin phoneLink(phoneString)
+  - var cleanPhone = phoneString.replace(/\(|\)|\s|\-/g, '')
+  a.phone(href="tel:#{cleanPhone}")= phoneString

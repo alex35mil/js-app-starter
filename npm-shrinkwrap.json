@@ -1,0 +1,11 @@
+{
+  "name": "js-app-starter",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": {
+      "version": "2.1.3",
+      "from": "jquery@*",
+      "resolved": "https://registry.npmjs.org/jquery/-/jquery-2.1.3.tgz"
+    }
+  }
+}

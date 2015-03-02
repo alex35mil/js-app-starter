@@ -1,0 +1,40 @@
+html
+  position: relative
+  min-height: 100%
+
+body
+  margin: 0 0 $footer-height
+
+footer
+  position: absolute
+  left: 0
+  bottom: 0
+  height: $footer-height
+  width: 100%
+  background-color: $footer-bg-color
+
+  .footer__inner
+    @extend $layout-section
+    display: flex
+    align-items: center
+    height: $footer-height
+
+    .footer__center
+      flex: 1
+      text-align: center
+      font-size: 1.5em
+      line-height: .7em
+      a
+        color: #777
+        text-decoration: none
+        &:hover
+          color: $base-text-color
+          text-decoration: none
+      .icon-github:before
+        content: "\eab4"
+
+    .footer__left
+    .footer__right
+      width: 30%
+      font-size: 1em
+
