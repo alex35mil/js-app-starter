@@ -43,7 +43,7 @@ git clone https://github.com/alexfedoseev/js-app-starter.git
 Navigate to repo's root:
 
 ```bash
-cd path/to/forked/repo'
+cd path/to/forked/repo
 ```
 
 Install dependencies:
